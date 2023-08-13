@@ -1,0 +1,30 @@
+@decorator background-domain-wraping : domain-wraping {
+    mix_detailing: 3;
+	detailing: 5/5;
+
+    uvs: from-viewport;
+    aspect: from-box;
+
+	speed: 0.9/0.9;
+
+	x_offset: -0.7/-0.4;
+	y_offset: 13/13;
+
+	first_color: rgb(50, 50, 50);
+	second_color: rgba(0, 0, 0, 0);
+}
+
+body.window {
+	font-family: Roboto;
+
+	font-size: 14px;
+	color: white;
+
+    width: 500px;
+    height: 300px;
+
+    background-color: rgb(13, 13, 13);
+    border-radius: 4px;
+
+	decorator: background-domain-wraping;
+}

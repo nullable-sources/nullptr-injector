@@ -1,0 +1,44 @@
+div.titlebar {
+    display: flex;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 30px;
+
+    padding: 0px 10px;
+
+    drag: drag;
+
+    background-color: rgba(0, 0, 0, 90);
+    border-radius: 4px 4px 0px 0px;
+}
+
+div.titlebar img { width: 23px; height: 21px; }
+
+div.titlebar div.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 100%;
+}
+
+
+div.titlebar button {
+    drag: drag;
+    font-family: fontello;
+    font-size: 19px;
+    line-height: 15px;
+}
+
+div.buttons label { font-size: 12px; color: rgb(100, 100, 100); }
+div.titlebar button:hover, div.titlebar button:active{ color: rgb(80, 80, 255); }
+
+div.titlebar button#collapse { color: rgb(255, 140, 40); }
+div.titlebar button#collapse:hover, button.title#collapse:active { color: rgb(255, 190, 120); }
+
+div.titlebar button#close { color: rgb(255, 40, 40); }
+div.titlebar button#close:hover, button.title#close:active { color: rgb(255, 100, 100); }

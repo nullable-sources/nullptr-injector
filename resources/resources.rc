@@ -1,0 +1,19 @@
+main.rml rml "rmlui/main.rml"
+
+styles/window/content.rcss rml "rmlui/styles/window/content.rcss"
+styles/window/titlebar.rcss rml "rmlui/styles/window/titlebar.rcss"
+styles/window/window.rcss rml "rmlui/styles/window/window.rcss"
+
+styles/widgets/dll-list.rcss		rml "rmlui/styles/widgets/dll-list.rcss"
+styles/widgets/process-list.rcss	rml "rmlui/styles/widgets/process-list.rcss"
+styles/widgets/text-input.rcss		rml "rmlui/styles/widgets/text-input.rcss"
+styles/widgets/multiselect.rcss		rml "rmlui/styles/widgets/multiselect.rcss"
+styles/widgets/listbox.rcss			rml "rmlui/styles/widgets/listbox.rcss"
+styles/widgets/scrollbar.rcss		rml "rmlui/styles/widgets/scrollbar.rcss"
+styles/widgets/widget.rcss			rml "rmlui/styles/widgets/widget.rcss"
+
+icons.ttf			rml "fonts/icons.ttf"
+roboto-regular.ttf	rml "fonts/Roboto-Regular.ttf"
+
+title.ico rml "icons/title.png"
+window.ico ICON "icons/window.ico"

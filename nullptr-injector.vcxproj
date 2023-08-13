@@ -19,7 +19,94 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\core\render\directx11\shaders\domain-warping-shader\domain-warping-shader.cpp" />
+    <ClCompile Include="src\core\render\graphic\filters\domain-warping-filter\domain-warping-filter.cpp" />
+    <ClCompile Include="src\core\render\render.cpp" />
+    <ClCompile Include="src\core\ui\model-view-controller\animations\animations.cpp" />
+    <ClCompile Include="src\core\ui\model-view-controller\data-model.cpp" />
+    <ClCompile Include="src\core\ui\model-view-controller\dll-list\dll-list.cpp" />
+    <ClCompile Include="src\core\ui\model-view-controller\process-list\process-list.cpp" />
+    <ClCompile Include="src\core\ui\model-view-controller\titlebar\titlebar.cpp" />
+    <ClCompile Include="src\core\ui\rmlui\domain-wraping-decorator\domain-wraping-decorator.cpp" />
+    <ClCompile Include="src\core\ui\ui.cpp" />
+    <ClCompile Include="src\functions\load-library\load-library.cpp" />
     <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="third-party\null-render\null-render.vcxproj">
+      <Project>{4abcf635-9767-40f9-989e-f0cdf5fb68ae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="third-party\null-render\src\backends\null-render-backend-directx11\null-render-backend-directx11.vcxproj">
+      <Project>{d51ad3ae-de95-488a-b202-a4192f685a59}</Project>
+    </ProjectReference>
+    <ProjectReference Include="third-party\null-rmlui\null-rmlui.vcxproj">
+      <Project>{220d4d11-15cc-489d-8d93-58cfe85348bd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="third-party\null-rmlui\src\rmlui-implementation\render-interfaces\null-rmlui-renderer-directx11\null-rmlui-renderer-directx11.vcxproj">
+      <Project>{6086e27b-cad4-474c-8c53-89c5e1d49199}</Project>
+    </ProjectReference>
+    <ProjectReference Include="third-party\null-sdk\null-sdk.vcxproj">
+      <Project>{f7a10a5c-0fae-424b-8f2b-6cc4e4d898d1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\render\backend\shaders\domain-warping-shader.h" />
+    <ClInclude Include="src\core\render\directx11\shaders\domain-warping-shader\compiled-object.h" />
+    <ClInclude Include="src\core\render\directx11\shaders\domain-warping-shader\domain-warping-shader.h" />
+    <ClInclude Include="src\core\render\graphic\filters\domain-warping-filter\domain-warping-filter.h" />
+    <ClInclude Include="src\core\render\render.h" />
+    <ClInclude Include="src\core\ui\model-view-controller\animations\animations.h" />
+    <ClInclude Include="src\core\ui\model-view-controller\data-model.h" />
+    <ClInclude Include="src\core\ui\model-view-controller\dll-list\dll-list.h" />
+    <ClInclude Include="src\core\ui\model-view-controller\process-list\process-list.h" />
+    <ClInclude Include="src\core\ui\model-view-controller\titlebar\titlebar.h" />
+    <ClInclude Include="src\core\ui\rmlui\domain-wraping-decorator\domain-wraping-decorator.h" />
+    <ClInclude Include="src\core\ui\ui.h" />
+    <ClInclude Include="src\functions\load-library\load-library.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="src\core\render\directx11\shaders\domain-warping-shader\hlsl\domain-warping.hlsl">
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">shader_data</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='release|Win32'">%(RootDir)%(Directory)..\compiled\%(Filename).h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">shader_data</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">%(RootDir)%(Directory)..\compiled\%(Filename).h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='release|x64'">shader_data</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='release|x64'">%(RootDir)%(Directory)..\compiled\%(Filename).h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">shader_data</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='debug|x64'">%(RootDir)%(Directory)..\compiled\%(Filename).h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+      </ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='release|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='release|x64'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='debug|x64'">4.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\rmlui\main.rml" />
+    <None Include="resources\rmlui\styles\widgets\dll-list.rcss" />
+    <None Include="resources\rmlui\styles\widgets\listbox.rcss" />
+    <None Include="resources\rmlui\styles\widgets\multiselect.rcss" />
+    <None Include="resources\rmlui\styles\widgets\process-list.rcss" />
+    <None Include="resources\rmlui\styles\widgets\scrollbar.rcss" />
+    <None Include="resources\rmlui\styles\widgets\text-input.rcss" />
+    <None Include="resources\rmlui\styles\widgets\widget.rcss" />
+    <None Include="resources\rmlui\styles\window\content.rcss" />
+    <None Include="resources\rmlui\styles\window\titlebar.rcss" />
+    <None Include="resources\rmlui\styles\window\window.rcss" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -93,13 +180,14 @@
     <ClCompile>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;RMLUI_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -109,13 +197,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;RMLUI_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -129,9 +218,10 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -145,9 +235,10 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>

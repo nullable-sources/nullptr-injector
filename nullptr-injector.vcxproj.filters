@@ -5,10 +5,207 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{10b43703-ca60-4c61-b781-d5c033b2b5bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\rmlui">
+      <UniqueIdentifier>{de414964-4c7e-4d97-9689-1d005318cc85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{554163ac-de87-4bd7-a096-b33bdf0324b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui">
+      <UniqueIdentifier>{4ca820ad-e78f-4e3c-b367-cb69de5d30c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render">
+      <UniqueIdentifier>{33c5f706-0de0-40f7-8256-31c2930904d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\backend">
+      <UniqueIdentifier>{1a4b6b8e-b13a-4967-853f-bd8f4e538a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\directx11">
+      <UniqueIdentifier>{f6ff900a-cf32-4aea-879b-9da7499b915e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\graphic">
+      <UniqueIdentifier>{bf05d6e8-911c-4230-a7e6-d368295dfbfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\graphic\filters">
+      <UniqueIdentifier>{9eebdbc1-bbcf-4f6b-94b3-1049d173f43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\graphic\filters\domain-warping-filter">
+      <UniqueIdentifier>{e8aa4f8c-6152-4f78-9d12-9270e96f545f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\directx11\shaders">
+      <UniqueIdentifier>{a0e13613-d115-4861-8576-3cb7823cb1b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\directx11\shaders\domain-warping-shader">
+      <UniqueIdentifier>{01186575-7037-40ff-8fcf-c2866af345be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\directx11\shaders\domain-warping-shader\hlsl">
+      <UniqueIdentifier>{646b1894-fcbc-4abe-9fc5-e5aa3b5e1242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\render\backend\shaders">
+      <UniqueIdentifier>{91d83ee2-6787-487f-b841-47fb1a95b213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui\rmlui">
+      <UniqueIdentifier>{84d65f92-cb9a-4365-9748-ec4d8da3e8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui\rmlui\domain-wraping-decorator">
+      <UniqueIdentifier>{1386b906-f440-4538-bc15-708c11614fe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\rmlui\styles">
+      <UniqueIdentifier>{6ad053d2-dbd1-44ce-869a-65de158cf014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\rmlui\styles\widgets">
+      <UniqueIdentifier>{97929e4a-10b1-4334-b0a9-83e347fb242e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\rmlui\styles\window">
+      <UniqueIdentifier>{6a089f6d-282a-4fc3-adb1-e48c77cbb729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui\model-view-controller">
+      <UniqueIdentifier>{dc466c8d-68f1-4a7a-89ea-5634c752f413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui\model-view-controller\titlebar">
+      <UniqueIdentifier>{25cb4017-e422-451e-8539-5540a2b13de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui\model-view-controller\process-list">
+      <UniqueIdentifier>{6619f6ad-d109-4425-afac-5c32434b05c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\functions">
+      <UniqueIdentifier>{25a87db4-783f-43c1-b707-b45e9513a124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui\model-view-controller\dll-list">
+      <UniqueIdentifier>{9577c293-56a4-4e95-ab7c-c4f9262d0f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ui\model-view-controller\animations">
+      <UniqueIdentifier>{a291fc98-f3af-48f0-ae4f-8bc2a6d407ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\functions\load-library">
+      <UniqueIdentifier>{18c91c53-d457-474a-bbda-2be5e69fb2aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\render\graphic\filters\domain-warping-filter\domain-warping-filter.cpp">
+      <Filter>src\core\render\graphic\filters\domain-warping-filter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\render\directx11\shaders\domain-warping-shader\domain-warping-shader.cpp">
+      <Filter>src\core\render\directx11\shaders\domain-warping-shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ui\rmlui\domain-wraping-decorator\domain-wraping-decorator.cpp">
+      <Filter>src\core\ui\rmlui\domain-wraping-decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ui\ui.cpp">
+      <Filter>src\core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\render\render.cpp">
+      <Filter>src\core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ui\model-view-controller\data-model.cpp">
+      <Filter>src\core\ui\model-view-controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ui\model-view-controller\titlebar\titlebar.cpp">
+      <Filter>src\core\ui\model-view-controller\titlebar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ui\model-view-controller\process-list\process-list.cpp">
+      <Filter>src\core\ui\model-view-controller\process-list</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ui\model-view-controller\dll-list\dll-list.cpp">
+      <Filter>src\core\ui\model-view-controller\dll-list</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ui\model-view-controller\animations\animations.cpp">
+      <Filter>src\core\ui\model-view-controller\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functions\load-library\load-library.cpp">
+      <Filter>src\functions\load-library</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\resources.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\render\graphic\filters\domain-warping-filter\domain-warping-filter.h">
+      <Filter>src\core\render\graphic\filters\domain-warping-filter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\render\directx11\shaders\domain-warping-shader\compiled-object.h">
+      <Filter>src\core\render\directx11\shaders\domain-warping-shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\render\directx11\shaders\domain-warping-shader\domain-warping-shader.h">
+      <Filter>src\core\render\directx11\shaders\domain-warping-shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\render\backend\shaders\domain-warping-shader.h">
+      <Filter>src\core\render\backend\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ui\rmlui\domain-wraping-decorator\domain-wraping-decorator.h">
+      <Filter>src\core\ui\rmlui\domain-wraping-decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ui\ui.h">
+      <Filter>src\core\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\render\render.h">
+      <Filter>src\core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ui\model-view-controller\data-model.h">
+      <Filter>src\core\ui\model-view-controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ui\model-view-controller\titlebar\titlebar.h">
+      <Filter>src\core\ui\model-view-controller\titlebar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ui\model-view-controller\process-list\process-list.h">
+      <Filter>src\core\ui\model-view-controller\process-list</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ui\model-view-controller\dll-list\dll-list.h">
+      <Filter>src\core\ui\model-view-controller\dll-list</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ui\model-view-controller\animations\animations.h">
+      <Filter>src\core\ui\model-view-controller\animations</Filter>
+    </ClInclude>
+    <ClInclude Include="src\functions\load-library\load-library.h">
+      <Filter>src\functions\load-library</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="src\core\render\directx11\shaders\domain-warping-shader\hlsl\domain-warping.hlsl">
+      <Filter>src\core\render\directx11\shaders\domain-warping-shader\hlsl</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\rmlui\main.rml">
+      <Filter>resources\rmlui</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\window\content.rcss">
+      <Filter>resources\rmlui\styles\window</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\window\titlebar.rcss">
+      <Filter>resources\rmlui\styles\window</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\window\window.rcss">
+      <Filter>resources\rmlui\styles\window</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\widgets\process-list.rcss">
+      <Filter>resources\rmlui\styles\widgets</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\widgets\scrollbar.rcss">
+      <Filter>resources\rmlui\styles\widgets</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\widgets\text-input.rcss">
+      <Filter>resources\rmlui\styles\widgets</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\widgets\widget.rcss">
+      <Filter>resources\rmlui\styles\widgets</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\widgets\dll-list.rcss">
+      <Filter>resources\rmlui\styles\widgets</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\widgets\listbox.rcss">
+      <Filter>resources\rmlui\styles\widgets</Filter>
+    </None>
+    <None Include="resources\rmlui\styles\widgets\multiselect.rcss">
+      <Filter>resources\rmlui\styles\widgets</Filter>
+    </None>
   </ItemGroup>
 </Project>

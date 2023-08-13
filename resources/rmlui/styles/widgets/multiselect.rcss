@@ -1,0 +1,44 @@
+multiselect {
+    display: inline-block;
+    box-sizing: border-box;
+
+    width: 70%;
+    height: 100%;
+
+    background-color: rgba(40, 40, 40, 150);
+    border-radius: 4px;
+}
+
+multiselect selectvalue {
+    box-sizing: border-box;
+
+    height: 100%;
+
+    font-size: 12px;
+    white-space: nowrap;
+
+    padding: 3px 0px 0px 5px;
+    margin-right: 20px;
+}
+
+multiselect selectarrow {
+    decorator: checkmark(rgb(140, 140, 255) 2.5px 7px 45deg 7px 45deg);
+    
+    width: 20px;
+    height: 100%;
+    
+    background-color: rgba(60, 60, 60, 150);
+    border-radius: 0px 4px 4px 0px;
+}
+multiselect selectarrow:checked { decorator: checkmark(rgb(140, 140, 255) 2.5px 7px 135deg 7px 135deg); }
+
+multiselect selectbox {
+    padding: 4px 6px;
+    margin-top: 4px;
+    
+    background: rgba(30, 30, 30, 210);
+    border-radius: 4px;
+}
+
+multiselect selectbox option:hover { padding-left: 4px; }
+multiselect selectbox option:checked { padding-left: 6px; color: rgb(140, 140, 255); }

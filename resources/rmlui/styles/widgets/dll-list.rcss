@@ -1,0 +1,83 @@
+div.dll-list {
+    display: block;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 70);
+    border-radius: 4px;
+}
+
+div.dll-list div.header {
+    display: inline-block;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 20px;
+
+    padding: 0px 4px;
+
+    font: fontello;
+    background-color: rgba(0, 0, 0, 70);
+    border-radius: 4px 4px 0px 0px;
+}
+
+div.dll-list div.header > *:not(:last-child) { margin-right: 5px; }
+
+div.dll-list button { display: inline-block; }
+div.dll-list button#add, div.dll-list button#remove {
+    margin-top: 2px;
+    padding-top: 4px;
+
+    font-size: 18px;
+    line-height: 11px;
+}
+
+div.dll-list button#inject {
+    float: right;
+
+    padding-top: 4px;
+    margin-top: -18px;
+
+    font-size: 23px;
+    line-height: 16px;
+}
+
+div.dll-list button:hover, div.dll-list button:active { color: rgb(90, 90, 255); }
+div.dll-list button[locked] { color: rgb(90, 90, 90); }
+
+div.dll {
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 5px;
+
+    white-space: nowrap;
+
+    background-color: rgba(30, 30, 30, 100);
+    border-radius: 4px;
+}
+
+div.dll:hover { background-color: rgba(50, 50, 50, 100); }
+div.dll[selected] { background-color: rgba(90, 90, 90, 100); }
+
+div.dll div.name-wrapper {
+    display: block;
+    clip: always;
+}
+
+div.dll label.name { pointer-events: none; font-size: 17px; }
+div.dll label.architecture, div.dll label.path { font-size: 12px; color: rgb(130, 130, 130); }
+
+div.path-wrapper {
+    display: inline-block;
+    clip: always;
+
+    width: 156px;
+
+    margin-left: 5px;
+}
+
+div.dll label.path { pointer-events: none; }

@@ -1,0 +1,12 @@
+sliderbar { background-color: rgb(80, 80, 80); border-radius: 2px; }
+sliderbar:hover, sliderbar:active { background-color:  rgb(140, 140, 255); }
+
+scrollbarvertical {
+    width: 4px;
+    
+    margin: 6px 6px 6px 0px;
+    
+    background-color: rgba(40, 40, 40, 70);
+
+    border-radius: 2px;
+}
